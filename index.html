@@ -93,17 +93,19 @@
     <!-- RESEARCH HIGHLIGHTS -->
     <section class="section" id="research">
       <h2>Research highlights</h2>
-      <p class="sub">Each research topic appears in its own row.</p>
+      <p class="sub">Each topic is its own row; each work is also its own row.</p>
 
       <!-- Topic Row 1 -->
       <div class="card" style="padding:16px;">
         <h3 style="margin:0 0 10px;">GPU side channels</h3>
 
-        <div class="grid cols-2">
+        <!-- NOTE: no cols-2 => each work becomes a separate row -->
+        <div class="grid">
+          <!-- Work 1 -->
           <div class="tile">
             <div class="work">
               <div class="figure">
-                <!-- Use real image: <img src="assets/work1.png" alt="Work 1 figure"> -->
+                <!-- Replace placeholder with: <img src="assets/work1.png" alt="Work 1 figure"> -->
                 <div class="ph">Figure placeholder<br/>assets/work1.png</div>
               </div>
               <div>
@@ -120,6 +122,7 @@
             </div>
           </div>
 
+          <!-- Work 2 -->
           <div class="tile">
             <div class="work">
               <div class="figure">
@@ -147,7 +150,8 @@
       <div class="card" style="padding:16px;">
         <h3 style="margin:0 0 10px;">GPU memory safety</h3>
 
-        <div class="grid cols-2">
+        <div class="grid">
+          <!-- Work 1 -->
           <div class="tile">
             <div class="work">
               <div class="figure">
@@ -167,6 +171,7 @@
             </div>
           </div>
 
+          <!-- Work 2 -->
           <div class="tile">
             <div class="work">
               <div class="figure">
