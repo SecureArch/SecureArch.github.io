@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Lab Name</title>
+  <meta name="description" content="Lab website: members, research highlights, sponsors, publications, courses." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="lab">Your Lab Name</div>
+        <div class="uni">University of Rochester</div>
+      </div>
+      <nav class="navlinks" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="courses.html">Courses</a>
+        <a href="members.html">Members</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card hero-card">
+          <div class="kicker">Secure Computer Architecture Group</div>
+          <h1>GPU Security, Side Channels, and Memory Safety</h1>
+          <p class="lead">
+            We study practical vulnerabilities in modern GPUs and build defenses that preserve performance.
+            This page highlights current directions and selected projects.
+          </p>
+          <div class="pills">
+            <div class="pill">GPU side channels</div>
+            <div class="pill">GPU memory safety</div>
+            <div class="pill">Systems + architecture security</div>
+          </div>
+        </div>
+
+        <!-- Overview "demo image" as inline SVG (works as a quick mock screenshot) -->
+        <div class="card hero-card" aria-label="Site overview demo image">
+          <div class="kicker">Overview demo</div>
+          <div class="figure" style="margin-top:10px;">
+            <svg viewBox="0 0 900 540" width="100%" height="auto" role="img" aria-label="Website overview mock">
+              <defs>
+                <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="rgba(255,255,255,0.10)"/>
+                  <stop offset="1" stop-color="rgba(255,255,255,0.03)"/>
+                </linearGradient>
+              </defs>
+              <rect x="20" y="20" width="860" height="500" rx="24" fill="url(#g)" stroke="rgba(255,255,255,0.16)" />
+              <rect x="50" y="60" width="800" height="46" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+              <rect x="65" y="72" width="200" height="22" rx="11" fill="rgba(255,255,255,0.12)"/>
+              <rect x="590" y="72" width="70" height="22" rx="11" fill="rgba(255,255,255,0.08)"/>
+              <rect x="670" y="72" width="92" height="22" rx="11" fill="rgba(255,255,255,0.08)"/>
+              <rect x="770" y="72" width="65" height="22" rx="11" fill="rgba(255,255,255,0.08)"/>
+
+              <rect x="50" y="126" width="520" height="120" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+              <rect x="70" y="150" width="300" height="18" rx="9" fill="rgba(255,255,255,0.12)"/>
+              <rect x="70" y="178" width="450" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+              <rect x="70" y="198" width="410" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+              <rect x="70" y="218" width="260" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+
+              <rect x="590" y="126" width="260" height="120" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+              <rect x="610" y="150" width="220" height="18" rx="9" fill="rgba(255,255,255,0.12)"/>
+              <rect x="610" y="178" width="120" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+              <rect x="610" y="198" width="190" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+              <rect x="610" y="218" width="160" height="12" rx="6" fill="rgba(255,255,255,0.08)"/>
+
+              <rect x="50" y="270" width="800" height="160" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+              <rect x="70" y="292" width="260" height="18" rx="9" fill="rgba(255,255,255,0.12)"/>
+              <rect x="70" y="322" width="120" height="90" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+              <rect x="200" y="322" width="120" height="90" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+              <rect x="330" y="322" width="120" height="90" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+              <rect x="460" y="322" width="120" height="90" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+              <rect x="590" y="322" width="120" height="90" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+              <rect x="720" y="322" width="120" height="90" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+
+              <rect x="50" y="448" width="800" height="46" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+              <rect x="70" y="460" width="140" height="22" rx="11" fill="rgba(255,255,255,0.08)"/>
+              <rect x="220" y="460" width="140" height="22" rx="11" fill="rgba(255,255,255,0.08)"/>
+            </svg>
+          </div>
+          <p class="small" style="margin-top:10px;">
+            This is a lightweight “mock screenshot” so you can see the layout immediately.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEMBERS -->
+    <section class="section" id="members">
+      <h2>Members</h2>
+      <p class="sub">Add / remove cards as your group changes.</p>
+
+      <div class="grid cols-3">
+        <div class="tile">
+          <h3>Yanan Guo</h3>
+          <p class="small">PI · Assistant Professor</p>
+          <div class="meta">
+            <span class="tag">GPU security</span>
+            <span class="tag">Side channels</span>
+          </div>
+        </div>
+
+        <div class="tile">
+          <h3>Student Name</h3>
+          <p class="small">PhD Student</p>
+          <div class="meta">
+            <span class="tag">Topic</span>
+            <span class="tag">Topic</span>
+          </div>
+        </div>
+
+        <div class="tile">
+          <h3>Student Name</h3>
+          <p class="small">MS/UG Student</p>
+          <div class="meta">
+            <span class="tag">Topic</span>
+            <span class="tag">Topic</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px;">
+        <a class="btn" href="members.html">View full members page →</a>
+      </div>
+    </section>
+
+    <!-- RESEARCH HIGHLIGHTS -->
+    <section class="section" id="research">
+      <h2>Research highlights</h2>
+      <p class="sub">Two areas, each with “work” items (figure + description + links).</p>
+
+      <div class="grid cols-2">
+        <!-- GPU SIDE CHANNELS -->
+        <div class="card" style="padding:16px;">
+          <h3 style="margin:0 0 10px;">GPU side channels</h3>
+
+          <div class="tile">
+            <div class="work">
+              <div class="figure">
+                <!-- Use an actual image: <img src="assets/work1.png" alt="Work 1 figure"> -->
+                <div class="ph">Figure placeholder<br/>assets/work1.png</div>
+              </div>
+              <div>
+                <h4>Work 1 title</h4>
+                <p class="small">
+                  2–3 sentences describing the idea, what you discovered, and the key takeaway.
+                </p>
+                <div class="links">
+                  <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Project page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile" style="margin-top:12px;">
+            <div class="work">
+              <div class="figure">
+                <div class="ph">Figure placeholder<br/>assets/work2.png</div>
+              </div>
+              <div>
+                <h4>Work 2 title</h4>
+                <p class="small">
+                  Short description. You can emphasize threat model, measurement, or impact.
+                </p>
+                <div class="links">
+                  <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Project page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GPU MEMORY SAFETY -->
+        <div class="card" style="padding:16px;">
+          <h3 style="margin:0 0 10px;">GPU memory safety</h3>
+
+          <div class="tile">
+            <div class="work">
+              <div class="figure">
+                <div class="ph">Figure placeholder<br/>assets/work3.png</div>
+              </div>
+              <div>
+                <h4>Work 1 title</h4>
+                <p class="small">
+                  Describe what vulnerability/primitive you study and what defense you propose (if any).
+                </p>
+                <div class="links">
+                  <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Project page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile" style="margin-top:12px;">
+            <div class="work">
+              <div class="figure">
+                <div class="ph">Figure placeholder<br/>assets/work4.png</div>
+              </div>
+              <div>
+                <h4>Work 2 title</h4>
+                <p class="small">
+                  Another short description. Keep it skimmable; link out for details.
+                </p>
+                <div class="links">
+                  <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Project page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSORS -->
+    <section class="section" id="sponsors">
+      <h2>Sponsors</h2>
+      <p class="sub">Place sponsor logos in <code>assets/</code> and update filenames below.</p>
+
+      <div class="sponsors">
+        <img class="logo" src="assets/logo1.png" alt="Sponsor 1 logo">
+        <img class="logo" src="assets/logo2.png" alt="Sponsor 2 logo">
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-row">
+        <div>© <span id="year"></span> Your Lab Name</div>
+        <div>
+          <a href="mailto:your_email@rochester.edu">your_email@rochester.edu</a>
+          &nbsp;·&nbsp;
+          <a href="https://www.cs.rochester.edu/" target="_blank" rel="noopener">UR CS</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
