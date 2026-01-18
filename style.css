@@ -293,4 +293,11 @@ footer{
   border: 1px solid var(--border);
   background: #fff;
 }
+ul, li {
+  color: var(--text);
+}
+
+li::marker {
+  color: var(--text);
+}
 
