@@ -300,4 +300,14 @@ ul, li {
 li::marker {
   color: var(--text);
 }
+/* Make PI card wider on index page */
+.pi-wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 900px) {
+  .pi-wide {
+    grid-column: span 1;
+  }
+}
 
