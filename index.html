@@ -70,7 +70,9 @@
     <div>
       <h3>Yanan Guo</h3>
       <a href="mailto:yanan.guo@rochester.edu">yanan.guo@rochester.edu</a>
+      <p class="intro">
       <a href="https://yananguo.com/">yananguo.com</a>
+      </p>
       <p class="intro">Assistant Professor</p>
       <p class="intro">Department of Computer Science</p>
       <p class="intro">University of Rochester</p>
@@ -95,12 +97,11 @@
 
     <!-- RESEARCH HIGHLIGHTS -->
     <section class="section" id="research">
-      <h2>Research highlights</h2>
-      <p class="sub">Each topic is its own row; each work is also its own row.</p>
+      <h2>Research Highlights</h2>
 
       <!-- Topic Row 1 -->
       <div class="card" style="padding:16px;">
-        <h3 style="margin:0 0 10px;">GPU side channels</h3>
+        <h3 style="margin:0 0 10px;">GPU Side-Channel Attacks</h3>
 
         <!-- NOTE: no cols-2 => each work becomes a separate row -->
         <div class="grid">
@@ -109,13 +110,15 @@
             <div class="work">
               <div class="figure">
                 <!-- Replace placeholder with: <img src="assets/work1.png" alt="Work 1 figure"> -->
-                <div class="ph">Figure placeholder<br/>assets/work1.png</div>
+                <div class="ph"><img src="assets/behind-bars.png" alt="Work 1 figure"></div>
               </div>
               <div>
-                <h4>Work 1 title</h4>
-                <p class="small">
-                  2–3 sentences describing the idea, the key result, and why it matters.
-                </p>
+                <h4>Side-Channel Attacks Across NVIDIA MIG Instances</h4>
+                <ul class="small">
+                    <li>NVIDIA MIG is designed to provide cache and memory isolation between users.</li>
+                    <li>This work demonstrates, for the first time, that MIG’s isolation is imperfect.</li>
+                    <li>We introduce a cross-MIG cache side-channel attack that reveals input and output characteristics of LLM inference.</li>
+                </ul>
                 <div class="links">
                   <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
                   <a class="btn" href="#" target="_blank" rel="noopener">Code</a>

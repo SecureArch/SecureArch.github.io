@@ -187,7 +187,7 @@ h1{
 
 .work{
   display:grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 450px 1fr;
   gap: 12px;
   align-items:start;
 }
@@ -202,7 +202,7 @@ h1{
   background: #fff;
 }
 .figure .ph{
-  aspect-ratio: 4/3;
+  aspect-ratio: auto;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -371,3 +371,49 @@ li::marker {
   color: var(--muted);
   font-size: 16px;
 }
+/* Lists inherit surrounding text color by default */
+ul, li {
+  color: inherit;
+}
+
+li::marker {
+  color: currentColor;
+}
+
+/* Muted / small lists (e.g., MIG side-channel bullets) */
+ul.small,
+ul.small li {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+ul.small li::marker {
+  color: var(--muted);
+}
+
+ul.small{
+  margin: 10px 0 0;
+  padding-left: 0;
+  list-style: none;          /* remove default bullets */
+}
+
+ul.small li{
+  position: relative;
+  padding-left: 1.1em;       /* space for our custom bullet */
+  color: var(--muted);
+  font-size: 14px;
+}
+
+ul.small li::before{
+  content: "•";
+  position: absolute;
+  left: 0;                   /* bullet aligned with title edge */
+  top: 0;
+  color: var(--muted);
+}
+.figure img{
+  width: 100%;
+  object-fit: cover;   /* fills without distortion */
+  display: block;
+}
+
