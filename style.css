@@ -310,4 +310,15 @@ li::marker {
     grid-column: span 1;
   }
 }
+.lab-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lab-logo {
+  width: 64px;      /* try 56–80px */
+  height: 64px;
+  flex-shrink: 0;
+}
 
