@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Lab Name</title>
+  <title>Rochester System Security Lab</title>
   <meta name="description" content="Lab website: members, research highlights, sponsors, publications, courses." />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -30,12 +30,14 @@
         <div class="kicker">Rochester System Security Group</div>
         <h1>(GPU) System Security and Performance</h1>
         <p class="lead">
-          We study practical vulnerabilities in modern GPUs and build defenses that preserve performance.
-          This page highlights current directions and selected projects.
+          We study practical vulnerabilities in modern systems and processors, especially GPUs, and build defenses that preserve performance. The specific fields include:
+          - GPU memory safety
+          - CPU/GPU side channels
+          - GPU microarchitecture optimization
         </p>
         <div class="pills">
-          <div class="pill">GPU side channels</div>
-          <div class="pill">GPU memory safety</div>
+          <div class="pill">Side channels</div>
+          <div class="pill">Memory safety</div>
           <div class="pill">Systems security</div>
           <div class="pill">GPU microarchitecture optimization</div>
         </div>
@@ -45,46 +47,34 @@
     <!-- MEMBERS -->
     <section class="section" id="members">
       <h2>Members</h2>
-      <p class="sub">PI and students are shown on separate rows.</p>
 
       <h3 style="margin: 12px 0 10px;">PI</h3>
       <div class="grid cols-3">
-        <div class="tile">
-          <h3>Yanan Guo</h3>
-          <p class="small">PI · Assistant Professor</p>
-          <div class="meta">
-            <span class="tag">GPU security</span>
-            <span class="tag">Side channels</span>
-            <span class="tag">Memory safety</span>
-          </div>
-        </div>
-      </div>
 
-      <h3 style="margin: 18px 0 10px;">Students</h3>
-      <div class="grid cols-3">
-        <div class="tile">
-          <h3>Student Name</h3>
-          <p class="small">PhD Student</p>
-          <div class="meta">
-            <span class="tag">Topic</span>
-            <span class="tag">Topic</span>
-          </div>
-        </div>
-        <div class="tile">
-          <h3>Student Name</h3>
-          <p class="small">MS Student</p>
-          <div class="meta">
-            <span class="tag">Topic</span>
-          </div>
-        </div>
-        <div class="tile">
-          <h3>Student Name</h3>
-          <p class="small">Undergraduate</p>
-          <div class="meta">
-            <span class="tag">Topic</span>
-          </div>
-        </div>
+
+<div class="tile">
+  <div class="pi-card">
+    <img
+      src="assets/yanan-guo.jpg"
+      alt="Yanan Guo"
+      class="pi-photo"
+    />
+    <div>
+      <h3>Yanan Guo</h3>
+      <p class="small">PI · Assistant Professor</p>
+      <div class="meta">
+        <span class="tag">GPU security</span>
+        <span class="tag">Side channels</span>
+        <span class="tag">Memory safety</span>
       </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 
       <div style="margin-top:12px;">
         <a class="btn" href="members.html">View full members page →</a>
