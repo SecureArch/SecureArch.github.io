@@ -417,3 +417,32 @@ ul.small li::before{
   display: block;
 }
 
+
+
+/* Mobile-specific fixes */
+@media (max-width: 600px) {
+  /* 1. Stack the Brand/University titles */
+  .brand {
+    flex-direction: column;
+    gap: 2px; /* Reduce space between the two lines */
+  }
+
+  .brand .uni {
+    font-size: 12px; /* Slightly smaller for better fit */
+  }
+
+  /* 2. Stack the PI Card elements */
+  .pi-card {
+    grid-template-columns: 1fr; /* Change from two columns to one */
+    justify-items: center;      /* Center the photo */
+    text-align: center;         /* Center the text for better mobile look */
+  }
+
+  .pi-photo {
+    margin-bottom: 10px;
+  }
+
+  .pi-card .meta {
+    justify-content: center;    /* Center the tags (GPU security, etc.) */
+  }
+}
