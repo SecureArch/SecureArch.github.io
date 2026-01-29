@@ -69,8 +69,8 @@
     />
     <div>
       <h3>Yanan Guo</h3>
-      <a href="mailto:yanan.guo@rochester.edu">yanan.guo@rochester.edu</a>
-      <p class="intro">
+      <p class="intro"> Email: <a href="mailto:yanan.guo@rochester.edu">yanan.guo@rochester.edu</a></p>
+      <p class="intro"> Website:
       <a href="https://yananguo.com/">yananguo.com</a>
       </p>
       <p class="intro">Assistant Professor</p>
@@ -110,7 +110,7 @@
             <div class="work">
               <div class="figure">
                 <!-- Replace placeholder with: <img src="assets/work1.png" alt="Work 1 figure"> -->
-                <div class="ph"><img src="assets/behind-bars.png" alt="Work 1 figure"></div>
+                <div class="ph"><img src="assets/behind-bars1.png" alt="Work 1 figure"></div>
               </div>
               <div>
                 <h4>Side-Channel Attacks Across GPU Instances (USENIX Security'26)</h4>
@@ -123,7 +123,6 @@
                 <div class="links">
                   <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
                   <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
-                  <a class="btn" href="#" target="_blank" rel="noopener">Project</a>
                 </div>
               </div>
             </div>
@@ -133,7 +132,7 @@
           <div class="tile">
             <div class="work">
               <div class="figure">
-                <div class="ph"><img src="assets/tlb_attack.png" alt="Work 1 figure"></div>
+                <div class="ph"><img src="assets/tlb_attack1.png" alt="Work 1 figure"></div>
               </div>
               <div>
                 <h4>Cross-VM GPU TLB Side-Channel Attack (NDSS'26)</h4>
@@ -146,7 +145,6 @@
                 <div class="links">
                   <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
                   <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
-                  <a class="btn" href="#" target="_blank" rel="noopener">Project</a>
                 </div>
               </div>
             </div>
@@ -161,17 +159,24 @@
         <h3 style="margin:0 0 10px;">GPU Memory Safety</h3>
 
         <div class="grid">
+
+
+
           <!-- Work 1 -->
           <div class="tile">
             <div class="work">
               <div class="figure">
-                <div class="ph">Figure placeholder<br/>assets/work3.png</div>
+                <div class="ph"><img src="assets/aslr.png" alt="Work 1 figure"></div>
               </div>
               <div>
-                <h4>Work 1 title</h4>
-                <p class="small">
-                  Describe the vulnerability/primitive and any defense or mitigation you propose.
-                </p>
+                <h4>Attack on CUDA ASLR (IEEE S&P'26)</h4>
+                <ul class="small">
+                    <li>This work conducts a thorough analysis of the virtual memory layout of CUDA programs.</li>
+                    <li>We identify several significant vulnerabilities in <b>CUDA ASLR</b>.</li>
+                    <li>One of the identified vulnerabilities enables a <b>GPU-to-CPU attack</b>.</li>
+                    <li style="color: red;">
+                        NVIDIA has fixed <b>one of </b>the identified vulnerabilities in driver version 570.</li>
+                </ul>
                 <div class="links">
                   <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
                   <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
@@ -185,23 +190,92 @@
           <div class="tile">
             <div class="work">
               <div class="figure">
-                <div class="ph">Figure placeholder<br/>assets/work4.png</div>
+                <div class="ph"><img src="assets/cusafe1.png" alt="Work 1 figure"></div>
               </div>
               <div>
-                <h4>Work 2 title</h4>
-                <p class="small">
-                  Short description. Keep it skimmable; link out for details.
-                </p>
+                <h4>Memory Safety Tool for CUDA (USENIX Security'26)</h4>
+                <ul class="small">
+                    <li>This work develops CuSafe, <b>the first</b> compiler-level framework for detecting spatial and temporal memory bugs in CUDA programs.</li>
+                    <li> Cusafe is <b>open-source </b> and runs on commodity NVIDIA GPUs without hardware or driver modifications.</li>
+                    <li> On average, CuSafe incurs 13% runtime slowdown and 0.3% memory overhead.</li>
+                </ul>
                 <div class="links">
                   <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
                   <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
-                  <a class="btn" href="#" target="_blank" rel="noopener">Project</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Work 3 -->
+          <div class="tile">
+            <div class="work">
+              <div class="figure">
+                <div class="ph"><img src="assets/gpu_exploit.png" alt="Work 1 figure"></div>
+              </div>
+              <div>
+                <h4>GPU Memory Exploitation (USENIX Security'24)</h4>
+                <ul class="small">
+                    <li>This work thoroughly analyzes <b>buffer overflow</b> vulnerabilities in CUDA on NVIDIA GPUs.</li>
+                    <li>We show that buffer overflows can enable <b>code injection</b> and <b>ROP</b> attacks.</li>
+                    <li>We uncover powerful ROP gadgets in CUDA libraries, including <b>arbitrary memory read/write</b> primitives.</li>
+
+                </ul>
+                <div class="links">
+                  <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
+
+      <div style="height:14px;"></div>
+
+      <!-- Topic Row 1 -->
+      <div class="card" style="padding:16px;">
+        <h3 style="margin:0 0 10px;">GPU Performance Characterization</h3>
+
+        <!-- NOTE: no cols-2 => each work becomes a separate row -->
+        <div class="grid">
+          <!-- Work 1 -->
+          <div class="tile">
+            <div class="work">
+              <div class="figure">
+                <!-- Replace placeholder with: <img src="assets/work1.png" alt="Work 1 figure"> -->
+                <div class="ph"><img src="assets/ev_hint.png" alt="Work 1 figure"></div>
+              </div>
+              <div>
+                <h4>Characterization of Cache Eviction Priority Hints on NVIDIA GPUs (MICRO'25)</h4>
+                <ul class="small">
+                    <li>This work reverse engineers the microarchitectural behavior of eviction priority hints on NVIDIA GPUs.</li>
+                    <li>We show that the current implementation of these hints can lead to unexpected performance degradation.</li>
+                    <li>For example, using <b>evict_last</b> to pin data in cache can instead trigger severe cache thrashing.</li>
+                </ul>
+                <div class="links">
+                  <a class="btn" href="#" target="_blank" rel="noopener">Paper</a>
+                  <a class="btn" href="#" target="_blank" rel="noopener">Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div style="height:14px;"></div>
+
+
+
+
+
+
+
+
     </section>
 
     <!-- SPONSORS -->
